@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@200&family=Lato&family=Roboto&display=swap');
+@import url(menu.css);
+@import url(footer.css);
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    /*font-family: 'Montserrat', sans-serif;*/
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    
+}
+
+img{
+    width: 100%;
+    max-width: 100%;
+    display: block;
+}
+
+
+
+.container {
+    width: 100%;
+    margin: auto;
+}
+
+.container--flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.column {
+    width: 100%;
+    
+}
+
+
+/*--------------Estilos del header---------------*/
+
+.main-header {
+    position: relative;
+    width: 200px;
+    top: 65px;
+    z-index: 3000;
+
+}
+
+.imagelogo {
+    width: 110px;
+    
+}
+
+
+
+.image-container {
+
+    transition: all 500ms ease-out;
+    width: 200px;
+    height: 200px;
+    background:rgba(38,14,4,0.9);
+    border-radius: 50%;
+    padding-top: 10px;
+    border: 3px solid rgba(0,0,0,0.3);
+    box-shadow: 2px 5px 40px
+}
+
+.image-container:hover {
+    transform: scale(1.1);
+    transition: all 500ms ease-out;
+    cursor: pointer;
+}
+
+
+
+
+/*---- Elementos del banner --------*/
+.banner {
+    width: 100%;
+    position: relative;
+    margin-top: -200px;
+    z-index: -100;
+    
+}
+
+.banner__img {
+    width: 100%;
+    height: 750px;
+    object-fit: cover;
+}
+
+.banner__content {
+    width: 90%;
+    color:white;
+    text-align: center;
+    position: absolute;
+    z-index: 1500;
+    top: 65%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.banner__content h2 {
+    color: yellow;
+    font-size: 1.2em
+}
+
+.banner__content h3 {
+    margin-top: 20px;
+    font-size: 1em
+}
+
+
+/*------------------RESPONSIVES-------------------*/
+
+@media screen and (min-width:480px) {
+
+
+}
+
+@media screen and (min-width:768px) {
+    
+
+    .column--33{
+        width: 32%;
+    }
+
+}
+
+
+
+@media screen and (min-width:1024px) {
+    
+    .container {
+        width: 1000px;
+    }
+    
+ 
+    .main-nav {
+        padding: 0;
+
+    }
+    
+    .menu{
+        background: rgba(38,14,4,0.6);
+    }
+    
+    .main-header{
+        top: 0px;
+        z-index: 4000;
+        width: 200px;
+    }
+    
+    
+    /*-------banner-------*/
+    .banner__img {
+        height: 700px;
+    }
+    .banner__content {
+        font-size: 2.5em;
+    }
+    
+    .banner__content h3{
+        font-size: 0.7em;
+
+    }
+    
+
+    
+    
+    /*--------menu-------*/
+    .icon-menu {
+        display: none;      
+    }
+    
+    .menu {
+        position: static;
+        display: flex;
+        height: auto;
+        height: auto;
+        width: auto;
+    }
+    
+    .menu__link {
+        padding: 20px;
+    }
+    
+    
+    
+    /*------footer--------*/
+    .main-footer {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    
+}
+
+@media screen and (min-width:1600px) {
+    .container{
+        width: 1500px;
+    }
+
+    .main-nav {
+    background: rgba(38,14,4,0.6);
+    }
+    
+    .main-header {
+    position: relative;
+    width: 200px;
+    top: 15px;
+    z-index: 3000;
+
+}
+    
+
+    
+}
